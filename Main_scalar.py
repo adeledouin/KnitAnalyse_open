@@ -111,12 +111,12 @@ else:
     grid = plot.make_grid(config)
 
     plot.plot_x_y_multiliste(np.size(Lw_f_ref), Lw_f_ref, f_ref, 'L_{w} (mm)', 'F(N)', 'Lw_drift', 'F',
-                             save=prepro.to_save_fig,
+                             save=None, #prepro.to_save_fig,
                              title='caracterisation  drift : force à extension de changement de regime',
                              colors=colors)
 
     plot.plot_y(Lw_f_ref, 'cycle', 'L_{w} (mm)', 'cycles', 'Lw_drift',
-                save=prepro.to_save_fig,
+                save=None, #prepro.to_save_fig,
                 title='caracterisation  drift : extension de changement de regime',
                 grid=grid)
 

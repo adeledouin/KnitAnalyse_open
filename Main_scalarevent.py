@@ -68,7 +68,7 @@ if display_figure:
     ax.plot(signalevent.ext[i, :], signalevent.f[i, :], '.')
     ax.plot(signalevent.ext[i, where_events], signalevent.f[i, where_events], 'r.')
     plot.plt.xlim(config_plot['signalevent_zoom_xlim'])
-    save = signalevent.to_save_fig + signaltype + '_zoom_c{}'.format(i) + '.pdf'
+    save = signalevent.to_save_fig + signaltype + '_zoom_c{}'.format(i)
     plot.fioritures(ax, fig, title='$\delta f$ zoom', label=None, grid=None, save=save)
 
 variations_df_tt = VariationsScalar(config, pourcentage=5, f=signalevent.df_tt, ext=signal_flu.ext, t=signal_flu.t,
@@ -114,7 +114,7 @@ for i in range(nb_seuils):
             label='seuil =' + np.str(seuils[i] * 10 ** exposants[i]) + 'e-' + np.str(exposants[i]) + 'N')
 plot.plt.xscale('log')
 plot.plt.yscale('log')
-save = signalevent.to_save_fig + 'pdf_' + 'df' + signalevent.savename_df_tt + '_seuils' + '.pdf'
+save = signalevent.to_save_fig + 'pdf_' + 'df' + signalevent.savename_df_tt + '_seuils'
 plot.fioritures(ax, fig, title='pdf de df pour differents seuils', label=True, grid=None, save=save)
 
 # %% ################# Partie 2 : Stats des events sup seuil ##################################
@@ -297,7 +297,7 @@ for i in range(decade.size-1):
     ax.plot(x_Pdf_dt_d[i], y_Pdf_dt_d[i], '.', label='decade {}'.format(i))
 plot.plt.xscale('log')
 plot.plt.yscale('log')
-save = None  # path_Tex + '{}'.format('pdf_df_all')
+save = None  # signalevent.to_save_fig + '{}'.format('pdf_df_all')
 plot.fioritures(ax, fig, title=None, label=True, grid=None, save=save, major=None)
 
 plot.plot_reg(dt_btw, np.min(dt_btw), np.max(dt_btw),
@@ -320,7 +320,7 @@ for i in range(decade.size-1):
     ax.plot(x_Pdf_nbp_d[i], y_Pdf_nbp_d[i], '.', label='decade {}'.format(i))
 plot.plt.xscale('log')
 plot.plt.yscale('log')
-save = None  # path_Tex + '{}'.format('pdf_df_all')
+save = None  # signalevent.to_save_fig + '{}'.format('pdf_df_all')
 plot.fioritures(ax, fig, title=None, label=True, grid=None, save=save, major=None)
 
 
@@ -368,7 +368,7 @@ for i in range(decade.size-1):
     ax.plot(x_Pdf_dt_d[i], y_Pdf_dt_d[i], '.', label='decade {}'.format(i))
 plot.plt.xscale('log')
 plot.plt.yscale('log')
-save = None  # path_Tex + '{}'.format('pdf_df_all')
+save = None  # signalevent.to_save_fig + '{}'.format('pdf_df_all')
 plot.fioritures(ax, fig, title=None, label=True, grid=None, save=save, major=None)
 
 plot.plot_reg(dt_btw, np.min(dt_btw), np.max(dt_btw),
@@ -391,7 +391,7 @@ for i in range(decade.size-1):
     ax.plot(x_Pdf_nbp_d[i], y_Pdf_nbp_d[i], '.', label='decade {}'.format(i))
 plot.plt.xscale('log')
 plot.plt.yscale('log')
-save = None  # path_Tex + '{}'.format('pdf_df_all')
+save = None  # signalevent.to_save_fig + '{}'.format('pdf_df_all')
 plot.fioritures(ax, fig, title=None, label=True, grid=None, save=save, major=None)
 
 yname = '\delta t_{btw}(s)'
@@ -406,7 +406,7 @@ y_Pdf, x_Pdf = plot.histo.my_histo(dt_btw, np.min(dt_btw),
 ax.plot(x_Pdf, y_Pdf, '.', label='decade {}'.format(i))
 plot.plt.xscale('log')
 plot.plt.yscale('log')
-save = None  # path_Tex + '{}'.format('pdf_df_all')
+save = None  # signalevent.to_save_fig + '{}'.format('pdf_df_all')
 plot.fioritures(ax, fig, title=None, label=True, grid=None, save=save, major=None)
 
 # # %% ################## Partie 3 : sum df btwpict ##################################
