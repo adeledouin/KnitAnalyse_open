@@ -5,19 +5,19 @@ import numpy as np
 import Config_exp
 import Config_plot
 from classConfig import Config
-from sub_NNdata import NNdata
-from sub_NNrescaling import NNrescaling
+from Sub.sub_NNdata import NNdata
+from Sub.sub_NNrescaling import NNrescaling
 from Datas.classSignal import SignalForce, SignalImg
 from Utils.classPlot import ClassPlot
 from Utils.classStat import Histo
-from sub_scalarevent import scalarevent
-from sub_scalarstats import scalarstats
+from Sub.sub_scalarevent import scalarevent
+from Sub.sub_scalarstats import scalarstats
 
 ################### Parser ##################################
 
 parser = argparse.ArgumentParser(description="run data analyse")
 parser.add_argument("-r", "--remote", action="store_true", help="n'affiche pas les plots")
-parser.add_argument("p", type=str, help="path_from_root")
+parser.add_argument("p", type=str, help="data path_from_root")
 parser.add_argument("t", type=str, help="référence du tricot")
 parser.add_argument("n", type=str, help="référence de l'expérience")
 parser.add_argument("v", type=str, help="version sous laquelle on travaille")
