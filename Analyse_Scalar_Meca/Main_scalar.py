@@ -8,7 +8,7 @@ from classConfig import Config
 from Datas.classScalar import Preprocess, Flu
 from Utils.classStat import Histo
 from Utils.classPlot import ClassPlot
-import Config_exp
+from Config import Config_exp
 import Config_plot
 
 ################### Main code ##################################

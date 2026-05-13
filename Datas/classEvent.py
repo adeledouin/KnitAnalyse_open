@@ -1,7 +1,4 @@
 import numpy as np
-from functools import partial
-from multiprocessing import Pool, Array
-import ctypes
 import timeit
 from pathlib import Path
 from skimage import measure
@@ -10,8 +7,7 @@ import logging
 from Utils.classFindPeak import Derivee, FindPeak
 from Utils.classCell import Cell
 from Utils.classStat import Stat, Shape
-from dictdata import dictdata
-import memory
+from Utils.dictdata import dictdata
 
 logging.basicConfig(format='| %(levelname)s | %(asctime)s | %(message)s', level=logging.INFO)
 

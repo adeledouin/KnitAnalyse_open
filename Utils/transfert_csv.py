@@ -4,7 +4,7 @@ import numpy as np
 from classConfig import Config
 from Utils.classCell import Cell
 from Datas.classSignal import SignalForce
-import Config_exp
+from Config import Config_exp
 
 ################### Variables ##################################
 remote = False

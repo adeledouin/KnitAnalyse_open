@@ -2,7 +2,7 @@ import argparse
 import timeit
 import numpy as np
 
-import Config_exp
+from Config import Config_exp
 import Config_plot
 from classConfig import Config
 from Sub.sub_NNdata import NNdata

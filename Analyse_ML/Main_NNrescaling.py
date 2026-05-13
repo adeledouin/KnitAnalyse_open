@@ -6,7 +6,7 @@ from Datas.classSignal import SignalForce, SignalImg, VariationsScalar
 from Utils.classPlot import ClassPlot
 from Utils.classStat import Histo
 from Sub.sub_plot_variations import plot_variations_flu
-import Config_exp
+from Config import Config_exp
 import Config_plot
 
 

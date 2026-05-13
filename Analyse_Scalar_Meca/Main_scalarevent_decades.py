@@ -7,9 +7,7 @@ from Datas.classSignal import SignalForce, SignalImg, VariationsScalar
 from Datas.classEvent_decades import ForceEvent
 from Utils.classStat import Histo
 from Utils.classPlot import ClassPlot
-from Sub.sub_plot_variations_event import plot_pdf_event, plot_variations_df_tt, plot_pdf_event_comparaison, \
-    plot_variations_df_img
-import Config_exp
+from Config import Config_exp
 import Config_plot
 
 ################### Main code ##################################

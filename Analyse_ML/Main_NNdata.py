@@ -4,7 +4,7 @@ import numpy as np
 from classConfig import Config
 from Datas.classSignal import SignalForce, SignalImg
 from Datas.classNNData import CreateNNData
-import Config_exp
+from Config import Config_exp
 import Config_plot
 
 ################### Main code ##################################
